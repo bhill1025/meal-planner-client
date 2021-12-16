@@ -1,0 +1,217 @@
+:root {
+    --navbar-color: #fff;
+    --navbar-color-dark: #dd3131;
+    --navbar-text: #dd3131;
+    --wood: #ba9269;
+    --save: #0c63e4;
+    --ireland: #1eb24d;
+}
+
+.pos-fixed {
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    z-index: 2;
+}
+
+.navigation {
+    height: 50px;
+    width: 100%;
+    border-bottom: 2px solid rgba(0,0,0,.125);
+    background-color: var(--navbar-color);
+    color: var(--navbar-text);
+    z-index: 1000;
+    box-shadow: 0 6px 12px rgba(0,0,0,.20), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.nav-size {
+    height: 50px;
+}
+
+.list-topic {
+    background-color: var(--navbar-color) !important;
+}
+
+.topic-text {
+    color: var(--navbar-text);
+    margin-bottom: 2px;
+}
+
+.logo-box {
+    width: 50px;
+    height: 50px;
+    border-right: 2px solid rgba(0, 0, 0, .125);
+    display: flex;
+    transition: 0.2s;
+}
+
+.logo-box:hover {
+    background-color: var(--navbar-color-dark);
+    color: #fff;
+}
+
+.logo-box:hover i {
+    color: #fff;
+}
+
+.logo-box-right {
+    width: 50px;
+    height: 100%;
+    border-left: 2px solid rgba(0,0,0,.125);
+}
+
+.group-div {
+    display: inline-block;
+}
+
+.stretch {
+    width: -webkit-calc(100% - 50px);
+    height: 100%
+}
+
+.vert-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.logo-center {
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.logo-style {
+    font-size: 30px;
+    color: var(--navbar-text);
+    background-color: transparent;
+    transition: 0.2s;
+}
+
+.top-button {
+    border: none;
+    height: 100%;
+    width: 100%;
+    background-color: inherit;
+}
+
+.recipe-card-box {
+    width: 33.33% !important;
+    padding: 0px 12px 0px 12px;
+}
+
+.recipe-card {
+    transition: 0.3s;
+    box-shadow: 0 6px 12px rgba(0,0,0,.10), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.recipe-card:hover {
+    transform: scale(1.01);
+    transition: 0.2s;
+    z-index: 10;
+    box-shadow: 0 6px 12px rgba(0,0,0,.20), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.banner-image {
+    border-bottom: 2px solid lightgray;
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+    opacity: 80%;
+}
+
+.placeholder-image {
+    height: 800px;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0 6px 12px rgba(0,0,0,.20), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.banner-text {
+    color: #fff;
+    font-size: 100px;
+    font-weight: bold;
+    text-shadow: 0px 2px 5px rgb(0 0 0 / 70%);
+    padding-bottom: 1.5rem;
+}
+
+.banner-overlay {
+    max-width: 50%;
+    position: absolute;
+    left: 8%;
+    text-align: left;
+}
+
+.banner-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    background-color: black;
+    height: 330px;
+    box-shadow: 0 6px 12px rgba(0,0,0,.20), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.center-text-vert {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.small-font {
+    font-size: 11px;
+}
+
+.fixed-background-image {
+    width: 100%;
+    height: 100%;
+    position:fixed;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    z-index: -1;
+}
+
+.white-background {
+    background-color: white;
+    box-shadow: 0 6px 12px rgba(0,0,0,.40), 0 4px 8px rgba(0,0,0,.06);
+    height: 100%;
+}
+
+.recipe-profile-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    box-shadow: 0 6px 8px -3px rgb(0 0 0 / 40%), 0 6px 8px -3px rgb(0 0 0 / 0%);
+    border-color: var(--navbar-color-dark);
+    border-style: solid;
+    border-width: 4px 0 0 0;
+    background-color: lightgray;
+}
+
+.ignore-gutters {
+    width: calc(100% + 1.5rem);
+    margin-left: -0.75rem !important;
+}
+
+.override-gutters {
+    --bs-gutter-x: 1.5rem !important;
+}
+
+.recipe-title {
+    color: var(--navbar-text);
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 0px 2px 3px rgb(0 0 0 / 40%);
+}
+
+.stretch-to-bottom {
+    height: 100vh;
+}
